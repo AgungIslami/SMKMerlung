@@ -4,14 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CalonSiswaController extends Controller
+class PendaftaranController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $data['pendaftaran'] = \App\Models\Pendaftaran::all();
+        $data['judul'] = 'Data-data pendaftaran';
+        return view('pendaftaran_index',$data);
     }
 
     /**
@@ -19,7 +21,7 @@ class CalonSiswaController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**

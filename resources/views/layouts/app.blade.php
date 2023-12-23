@@ -36,8 +36,9 @@
                             <a href="/home" class="nav-link">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/calonsiswa" class="nav-link"></a>
+                            <a href="/calonsiswa" class="nav-link">Pendaftaran</a>
                         </li>
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -80,6 +81,7 @@
         </nav>
 
         <main class="py-4">
+            @include('flash::message')
             @yield('content')
         </main>
     </div>
