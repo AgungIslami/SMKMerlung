@@ -30,7 +30,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                        @auth
 
+                        <li class="nav-item">
+                            <a href="/home" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/calonsiswa" class="nav-link"></a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
